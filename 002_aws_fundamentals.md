@@ -87,3 +87,47 @@ A bucket is created in an specific region. The bucket name needs to be globally 
 * Great for large scale data storage, distribution or upload
 * Great for offload
 * INPUT and/or OUTPUT to many AWS products
+
+
+## CloudFormation Basics
+Is a tool that allows us to create, update and delete infrastructure in an automated way. You could use YAML or JSON format to automate infrastructure operations. Templates are used to create stacks, which are used to interact with resources in an AWS account.  
+
+## CloudWatch Basics
+CloudWatch is a core supporting service within AWS which provides metrics, logs and event management services. It's used through other AWS services for health and performance monitoring, log management and neverless architectures.
+* Collects and manages operational data
+* Metrics - AWS Products, Apps, on-premises
+* Logs - AWS Products, Apps, on-premises
+* Events - AWS Services & Schedules
+
+A metric is a collection of different data points time ordered. For example, CPU Usage, Network, Disk IO.
+Dimensions separate datapoints for different things or perspectives within the same metric. An alarm is setted within a metric and take actions when the defined value matchs the conditions.
+
+## HA - FT - DR
+* High-Availability &rarr; Aims to ensure an agreed level of operational performance, usually uptime, for a higher than normal period. Minimize outages.
+* Fault-Tolerance &rarr; Is the property that enables a system to continue operating properly in the event of the failure of some (one or more faults within) of its components. Operate through failure.
+* Disaster-Recovery &rarr; Is a set of policies, tools and procedures to enable the recovery or continuation of vital technology infrastructure and systems following a natural or human-induced disaster.
+
+
+## Route53
+AWS managed DNS product.
+1. Register Domains
+2. Host Zones.. managed nameservers
+
+* Global Service &rarr; single database
+* Globally Resilient
+
+### Hosted zones
+* Zone files in AWS
+* Hosted on four managed name servers
+* Can be public..
+* Or private &rarr; linked to VPC's
+* .. Stores records (recordsets)
+
+### DNS Record Types
+* Nameserver (NS)
+* A and AAAA Records &rarr; Host to IP (v4 or v6)
+* CNAME records &rarr; Canonical name, Host to Host
+* MX Records &rarr; A mail. Find a mail server (SMTP) for a domain.
+* TXT Records &rarr; Add attributes
+
+#### DNS TTL - Time To Live
