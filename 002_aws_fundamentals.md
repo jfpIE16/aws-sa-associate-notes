@@ -102,6 +102,26 @@ CloudWatch is a core supporting service within AWS which provides metrics, logs 
 A metric is a collection of different data points time ordered. For example, CPU Usage, Network, Disk IO.
 Dimensions separate datapoints for different things or perspectives within the same metric. An alarm is setted within a metric and take actions when the defined value matchs the conditions.
 
+## CloudWatch Logs
+* Public Service - Usable from AWS or on-premises.
+* Store, Monitor and access logging data.
+* AWS Integrations - EC2, VPC Flow Logs, Lambda, CloudTrail, Route53 and more...
+* Can generate metrics based on logs - metric filter.
+
+## CloudTrail
+* Logs API calls/activities as a CloudTrail Event
+* 90 days stored by default in Event History
+* Enabled by default - no cost for 90 day history
+* To customize the service .. create 1 or more Trails
+* Trails are how you configure S3 and CWLogs
+* Management Events and Data Events
+* Not realtime - there is a delay
+
+## AWS Control Tower
+AWS Control Tower offers a straightforward way to set up and govern an AWS multi-account environment, following prescriptive best practices. AWS Control Tower orchestrates the capabilities of several other AWS services, including AWS Organizations, AWS Service Catalog, and AWS IAM Identity Center (successor to AWS Single Sign-On), to build a landing zone in less than an hour. Resources are set up and managed on your behalf.
+
+AWS Control Tower orchestration extends the capabilities of AWS Organizations. To help keep your organizations and accounts from drift, which is divergence from best practices, AWS Control Tower applies preventive and detective controls (guardrails). For example, you can use guardrails to help ensure that security logs and necessary cross-account access permissions are created, and not altered.
+
 ## HA - FT - DR
 * High-Availability &rarr; Aims to ensure an agreed level of operational performance, usually uptime, for a higher than normal period. Minimize outages.
 * Fault-Tolerance &rarr; Is the property that enables a system to continue operating properly in the event of the failure of some (one or more faults within) of its components. Operate through failure.
