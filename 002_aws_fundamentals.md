@@ -151,3 +151,32 @@ AWS managed DNS product.
 * TXT Records &rarr; Add attributes
 
 #### DNS TTL - Time To Live
+
+# Key Management Service (KMS)
+AWS Key Management Service (AWS KMS) makes it easy for you to create and manage cryptographic keys and control their use across a wide range of AWS services and in your applications. AWS KMS is a secure and resilient service that uses hardware security modules that have been validated under FIPS 140-2, or are in the process of being validated, to protect your keys.
+* Regional & Public Service
+* Create, Store and Manage Keys
+* Symmetric and Asymmetric Keys
+* Cryptographic operations (encrypt, decrypt & ...)
+* Keys never leave KMS - Provides FIPS 140-2 (L2)
+* KMS Keys are logical - ID, date, policy, desc & state
+* ... backed by physical key material
+* Generated or imported
+* KMS Keys can be used for up to 4KB of data
+
+Data encryption Keys
+* GeneratedDataKey - works on > 4KB
+* Plaintext Version
+* Ciphertext
+* Encrypt data using plaintext key
+* Discard
+* Store encrypted key with data
+
+Key concepts
+* KMS Keys are isolated to a region & never leave
+* AWS Owned & customer owned
+* Customer owned ... AWS Managed or customer managed keys
+* Customer managed keys are more configurable
+* KMS Keys support rotation
+* Backing Key (and previous backing keys)
+* Aliases
